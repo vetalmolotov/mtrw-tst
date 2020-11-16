@@ -22,7 +22,7 @@ const App = () => {
         images && images.map(img => (
           <div key={img.id} >
             <img src={img.url} alt=''/>
-            <img src={img.user.profile_image} alt=''/>
+            <img src={img.user.profile_image} alt='' />
           </div>
         ))
       }
