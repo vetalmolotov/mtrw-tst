@@ -18,14 +18,16 @@ const App = () => {
 
   return (
     <div className='app'>
-      {
-        images && images.map(img => (
-          <div key={img.id} >
-            <img src={img.url} alt=''/>
-            <img src={img.user.profile_image} alt='' />
-          </div>
-        ))
-      }
+      <div className='images'>
+        {
+          images && images.map(img => (
+              <div key={img.id} >
+                <img src={img.url} alt=''/>
+                <img src={img.user.profile_image} alt='' />
+              </div>
+          ))
+        }
+      </div>
     </div>
   );
 }
